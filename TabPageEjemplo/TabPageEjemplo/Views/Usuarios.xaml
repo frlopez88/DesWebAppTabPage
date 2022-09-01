@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabPageEjemplo.Views.Usuarios"
+             Title="Users"
+             >
+    <Grid BackgroundColor="#4287f5">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height=".25*" ></RowDefinition>
+            <RowDefinition Height=".25*" ></RowDefinition>
+            <RowDefinition Height=".25*"></RowDefinition>
+            <RowDefinition Height=".25*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image 
+            Grid.Column="1"
+            Grid.Row="0"
+            Source="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.25/c_scale,w_600/ncom/en_US/games/switch/n/new-super-mario-bros-u-deluxe-switch/description-image" ></Image>
+
+        <Entry Placeholder="Ingrese Usuario"  Keyboard="Text" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" ></Entry>
+        <Entry IsPassword="True" Placeholder="Ingrese Contraseña" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" ></Entry>
+
+        <DatePicker  Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3"></DatePicker>
+
+        <Button Text="Registrarse" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="1"></Button>
+        <Button Text="Limpiar" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="1"></Button>
+
+    </Grid>
+</ContentPage>
