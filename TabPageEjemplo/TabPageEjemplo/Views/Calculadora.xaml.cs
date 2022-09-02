@@ -81,6 +81,16 @@ namespace TabPageEjemplo.Views
             }
         }
 
+        private void accionLimpiar(object sender, EventArgs e)
+        {
+            inputs.Text = "0";
+        }
 
+        private void clicX(object sender, EventArgs e)
+        {
+
+            valorAnterior.Text = inputs.Text;
+            inputs.Text = "0";
+        }
     }
 }

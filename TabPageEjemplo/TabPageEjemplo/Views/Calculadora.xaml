@@ -31,7 +31,7 @@
         <Button Clicked="clic7" Text="7" Grid.Column="0" Grid.Row="1" ></Button>
         <Button Clicked="clic8" Text="8" Grid.Column="1" Grid.Row="1" ></Button>
         <Button Clicked="clic9" Text="9" Grid.Column="2" Grid.Row="1" ></Button>
-        <Button  Text="x" Grid.Column="3" Grid.Row="1" ></Button>
+        <Button Clicked="clicX" Text="x" Grid.Column="3" Grid.Row="1" ></Button>
 
         <Button Clicked="clicNumero" Text="4" Grid.Column="0" Grid.Row="2" ></Button>
         <Button Clicked="clicNumero" Text="5" Grid.Column="1" Grid.Row="2" ></Button>
@@ -51,6 +51,6 @@
         <Button Text="MIN" Grid.Column="0" Grid.Row="5" ></Button>
         <Button Text="MAX" Grid.Column="1" Grid.Row="5" ></Button>
         <Button Text="%" Grid.Column="2" Grid.Row="5" ></Button>
-        <Button Text="Sqrt Root" Grid.Column="3" Grid.Row="5" ></Button>
+        <Button Clicked="accionLimpiar" Text="AC" Grid.Column="3" Grid.Row="5" ></Button>
     </Grid>
 </ContentPage>
