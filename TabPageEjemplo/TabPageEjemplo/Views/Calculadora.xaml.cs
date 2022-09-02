@@ -17,11 +17,13 @@ namespace TabPageEjemplo.Views
             InitializeComponent();
         }
 
+        public string Operador { get; set; }
+
         private void clic7(object sender, EventArgs e)
         {
             double valorActual = double.Parse(inputs.Text);
 
-            if (valorActual == 0.0)
+            if (valorActual == 0.0 || Operador == "=")
             {
                 inputs.Text = "7";
             }
@@ -35,7 +37,7 @@ namespace TabPageEjemplo.Views
         {
             double valorActual = double.Parse(inputs.Text);
 
-            if (valorActual == 0.0)
+            if (valorActual == 0.0 || Operador == "=")
             {
                 inputs.Text = "8";
             }
@@ -50,7 +52,7 @@ namespace TabPageEjemplo.Views
         {
             double valorActual = double.Parse(inputs.Text);
 
-            if (valorActual == 0.0)
+            if (valorActual == 0.0 || Operador == "=")
             {
                 inputs.Text = "9";
             }
@@ -70,7 +72,7 @@ namespace TabPageEjemplo.Views
 
             double valorActual = double.Parse(inputs.Text);
 
-            if (valorActual == 0.0)
+            if (valorActual == 0.0 || Operador == "=")
             {
                 inputs.Text = tmpValText;
             }
@@ -91,6 +93,21 @@ namespace TabPageEjemplo.Views
 
             valorAnterior.Text = inputs.Text;
             inputs.Text = "0";
+            Operador = "x";
+        }
+
+        private void clicIgual(object sender, EventArgs e)
+        {
+            double resultadoFinal = 0;
+
+            if (Operador == "x") {
+                resultadoFinal = double.Parse(valorAnterior.Text) * double.Parse(inputs.Text);
+                valorAnterior.Text = valorAnterior.Text + " x " + inputs.Text;
+                inputs.Text = resultadoFinal.ToString();
+                Operador = "=";
+            }
+            
+
         }
     }
 }
