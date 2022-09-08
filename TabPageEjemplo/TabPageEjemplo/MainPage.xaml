@@ -7,7 +7,7 @@
 
     <local:Usuarios></local:Usuarios>
     <local:Calculadora/>
-    
+    <local:CracionPersonas></local:CracionPersonas>
 
 
 
